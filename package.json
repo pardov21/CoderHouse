@@ -1,0 +1,24 @@
+{
+  "name": "coderhouse",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/pardov21/CoderHouse#readme",
+  "bugs": {
+    "url": "https://github.com/pardov21/CoderHouse/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pardov21/CoderHouse.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "luxon": "^3.7.1"
+  }
+}

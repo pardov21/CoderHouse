@@ -5,8 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tienda de Aceites</title>
 </head>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .productos {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .producto {
+      background: #fff;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .producto h3 {
+      margin: 10px 0;
+      color: #444;
+    }
+    .producto button {
+      background: #28a745;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .producto button:hover {
+      background: #218838;
+    }
+    .carrito {
+      margin-top: 30px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .carrito h2 {
+      margin-bottom: 15px;
+    }
+    .carrito ul {
+      list-style: none;
+      padding: 0;
+    }
+    .carrito li {
+      padding: 5px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    .totales {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    .vaciar {
+      margin-top: 15px;
+      background: #dc3545;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .vaciar:hover {
+      background: #c82333;
+    }
+  </style>
+</head>
 <body>
-      <script src="app.js"></script>
-      <script>menuAceites()</script>
-</body> 
+  <h1>Menú de Aceites</h1>
+
+  <div class="productos" id="productos"></div>
+
+  <div class="carrito">
+    <h2>🛒 Carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <div class="totales" id="totales"></div>
+    <button class="vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
 </html>
